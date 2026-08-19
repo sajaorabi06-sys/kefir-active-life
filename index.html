@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="boKVMx2aoMHLQ9ffxwaqw4QXuNUAzyMBpLMk1w3wsSQ" />
     <title>Kefir Active Life | كفير الصحة لحياة أفضل</title>
 
     <link rel="stylesheet" href="kefir.css  ">
@@ -20,7 +21,7 @@
                 <img src="logo.jpeg" alt="Kefir Active Life">
             </div>
 
-            <a href="tel:01055874264" class="order-btn">
+            <a onclick="sendwhats()" class="order-btn">
                 اطلب الآن
             </a>
 
@@ -49,7 +50,7 @@
 
                 <div class="hero-buttons">
 
-                    <a href="tel:01055874264" class="btn primary">
+                    <a onclick=" sendwhats()" class="btn primary">
                         📞 اطلب الآن
                     </a>
 
@@ -217,6 +218,12 @@
         </p>
 
     </footer>
-
+   <script>
+   function sendwhats(){
+    let num="201055874264"
+    let message="" ;
+    let url = ` https://wa.me/${num}?text=${encodeURIComponent(message)} `;
+    window.open(url,"_blank")
+}</script>
 </body>
 </html>
